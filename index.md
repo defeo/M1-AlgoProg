@@ -89,7 +89,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 1 avril
 : 2e contrôle continu ([Sujet](annales/2016-cc2))
 
-4 mai
+4 
 : examen 1e session ([Sujet](annales/2016-exam))
 
 15 juin
