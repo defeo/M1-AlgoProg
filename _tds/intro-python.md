@@ -2,15 +2,40 @@
 title: Introduction à Python
 ---
 
-Python est un langage de programmation orienté objet (mais oublions le côté objet pour l'instant). Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Ici, nous allons utiliser la version 3 du langage qui apporte beaucoup de modifications par rapport aux versions précédentes. 
+Python est un langage de programmation orienté objet (mais oublions le
+côté objet pour l'instant). Sa première version a été écrite par Guido
+van Rossum qui était un grand fan de Monty Python.
 
-Ce mini-tutoriel est une introduction très basique et rapide à la syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriels bien faits existent sur le net, n'hésitez pas à les consulter.
+Ce mini-tutoriel est une introduction très basique et rapide à la
+syntaxe et aux règles du langage. Si vous voulez approfondir plus,
+plein de tutoriels bien faits existent sur le net, n'hésitez pas à les
+consulter.
 
-Pendant ces TP nous allons travailler avez l'environnement `Jupyter` et l'interpréteur `python3`. Tout cela est disponible sur les cartables numériques, mais aussi [en ligne](https://sage.prism.uvsq.fr/hub/login). Cliquez sur `New --> Python 3` pour créer un nouveau notebook. `python3` est aussi accessible directement dans un terminal : tapez `python3` pour lancer l'interpréteur. 
+Pendant ces TP nous allons travailler avec l'environnement *Jupyter*
+et l'interpréteur *Python 3*. Tout cela est disponible sur le serveur
+de calcul <https://jupyter.ens.uvsq.fr/>. Nous allons apprendre à nous
+servir de la *console*, avant de passer aux *notebooks*.
+
+Dans la zone *"Console"*, cliquez sur l'icône de Python 3.
+
+**Note:** En cas de panne réseau, vous pouvez utiliser la version de
+Python installée sur les cartables numériques. Pour la console Python
+3, taper la commande `ipython` dans un terminal; pour le notebook,
+taper la commande `jupyter notebook`.
+
 
 ## Python en mode calculatrice
 
-La plus simple utilisation que vous pouvez faire de Python est de l'utiliser comme une simple calculatrice. Vous pouvez essayer dans le terminal les calculs suivants :
+La plus simple utilisation que vous pouvez faire de Python est de
+l'utiliser comme une simple calculatrice. La *console* se presente
+comme une cellule de texte dans laquelle on peut évaluer des énoncés
+Python. Tapez du code dans la cellule, par exemple `1+1`, et ensuite
+`Maj.+Entrée` pour *évaluer*. Le code et son résultat s'affichent dans
+la zone en haut.
+
+Vous pouvez essayer dans la console les calculs suivants (dans ces
+pages, pour signifier une session intéractive, nous faisons précéder
+les entrées par `>>>`, une convention classique en Python) :
 
 ~~~python
 >>> 2+6
@@ -19,9 +44,8 @@ La plus simple utilisation que vous pouvez faire de Python est de l'utiliser com
 -2
 >>> 13 + 2*4  # La priorité des opérations est comme d'habitude
 21
->>> 21 / 4    # Attention ! En Python 2 cette instruction retourne 
-5.25          # la partie  entière de la division. En Python 3 c'est  
-              # une division flottante, même entre deux entiers
+>>> 21 / 4    # Division en virgule flottante (même entre deux entiers)
+5.25
 >>> 21 // 4   # Partie entière de la division
 5
 >>> 21 % 4    # Reste de la division
@@ -143,7 +167,7 @@ L'instruction qui est sans doute la plus utile afin de permettre un tel comporte
 
 #### Indentation
 
-En Python, les instructions composées (comme c'est le cas de l'instruction `if`, mais aussi des instructions `while`, `for` et des *fonctions* que nous verrons plus tard) ont toujours la même structure : une *ligne d'entête* terminée par un *deux-points*, suivie d'un bloc d'instructions indenté sous la ligne d'entête. Toutes les instructions de ce bloc **doivent être indentées exactement au même niveau**. Une convention très respectée est d'utiliser un décalage de 4 espaces. 
+En Python, les instructions composées (comme c'est le cas de l'instruction `if`, mais aussi des instructions `while`, `for` et des *fonctions* que nous verrons plus tard) ont toujours la même structure : une *ligne d'entête* terminée par un *deux-points*, suivie d'un bloc d'instructions indenté sous la ligne d'entête. Toutes les instructions de ce bloc **doivent être indentées exactement au même niveau**. Une convention très respectée est d'utiliser un décalage de 4 espaces (fait automatiquement par Jupyter). 
 
 Avec une telle convention, il est inutile de marquer le début et la fin d’un bloc par des éléments du langage (comme des accolades { et } en C ou Java , ou les mots réservés `begin` et `end` dans certains autres langages).
 
@@ -251,6 +275,42 @@ impaire. Itérez tant que `b` est supérieur à 0.
 
 Affichez la somme des cubes de tous les multiples de 3 compris entre 0 et 99 inclus. Utilisez pour cela l'instruction `for` et la fonction `range()`.
 
+## Le notebook
+
+La console est pratique pour des calculs rapides, mais devient pénible
+pour écrire des longs codes. Pour cela, le *notebook* offre un
+environnement plus agréable.
+
+Fermez la console et, dans la zone *"Notebook"*, cliquez sur l'icône
+de Python 3. Vous êtes maintenant dans un environnement assez
+semblable à la console, cependant il vous est maintenant possible de
+revenir en arrière et modifier les définitions. Par exemple, tapez
+dans une cellule
+
+~~~python
+a = 2
+~~~
+
+évaluez, puis dans la cellule suivante tapez
+
+~~~python
+a + a
+~~~
+
+Maintenant revenez (à la souris ou avec les flèches du clavier) sur la
+première cellule et changez la valeur de `a` en `3`. Réévaluez les
+deux cellules et observez le résultat.
+
+Les notebooks sont sauvegardés automatiquement dans des fichiers
+d'extension `.ipynb`. En les utilisant, vous retrouverez votre travail
+dans votre espace en ligne d'une semaine sur l'autre.
+
+**:**{:.exercise}
+
+Refaites quelques uns des calculs faits jusqu'ici. Essayez de modifier
+quelques valeurs intermédiaires et réévaluez.
+
+
 ## Fonctions
 
 Pour créer une fonction en Python, on commence par le mot-clé `def` (définition). Il doit être suivi par le nom de la fonction, la liste des paramètres entre parenthèses et un deux-points '`:`'. Le corps de la fonction commence à la ligne suivante et doit être écrit avec un retrait de quelques espaces.
@@ -258,13 +318,15 @@ Pour créer une fonction en Python, on commence par le mot-clé `def` (définiti
 Voici une fonction qui imprime les `n` premiers termes  de la suite *Fibonacci*.
 
 ~~~python
->> def fibonacci(n):
-...     a, b = 0, 1
-...     for i in range(20):
-...         print(a, end=' ')
-...         a, b = b, a + b
-...     print(a)
-... 
+def fibonacci(n):
+    a, b = 0, 1
+    for i in range(20):
+        print(a, end=' ')
+        a, b = b, a + b
+    print(a)
+~~~
+
+~~~python
 >>> fibonacci(20)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765
 ~~~
@@ -273,15 +335,16 @@ On peut bien sûr écrire une fonction qui nous renvoie quelque chose. Ceci se f
 Voici une fonction qui renvoie la somme des carrés des entiers de 0 à `n`.
 
 ~~~python
->>> def sommeCarres(n):
-...     sum = 0
-...     for i in range(n):
-...         sum += i**2
-...     return sum
-... 
+def sommeCarres(n):
+    sum = 0
+    for i in range(n):
+        sum += i**2
+    return sum
+~~~
+
+~~~python
 >>> sommeCarres(20)
 2470
->>> 
 ~~~
 
 Vous trouverez plus d'informations sur les fonctions en Python ici : [docs.python.org](https://docs.python.org/3.1/tutorial/controlflow.html#)
@@ -448,12 +511,6 @@ Définissez la liste `liste = [34, 0, -17, 5, 18, 9]`, puis effectuez les action
 
 Modifier la fonction `fibonacci(n)` de la Section 5 afin qu'elle renvoie une liste avec les `n` premiers termes de la suite Fibonacci.
 
-# Exercices
-
-Vous êtes prêts maintenant à écrire par vous mêmes des programmes un peu plus longs et compliqués. Si le notebook est toujours pratique, le mode terminal lui ne l'est plus. L'alternative est d'utiliser des *scripts* pour écrire, sauvegarder et modifier vos programmes. Pour écrire un script il vous suffit de créer un fichier dont le nom se termine par `.py` afin d'indiquer qu'il s'agit bien d'un script Python. Vous pouvez ensuite l'exécuter dans un terminal en écrivant
-~~~
-python3 script.py
-~~~
 
 ## Crible d'Ératosthène
 
@@ -480,8 +537,5 @@ Pour cet exercice, on suppose que l'utilisateur possède une liste croissante de
 Si la liste fournie est [1,3,4,6,10,14,15] et l'élément qu'on cherche est 10, alors le programme doit retourner 4 (souvenez-vous que, dans une liste, les indices sont numérotés à partir de 0).
 
 Écrivez une fonction `rechercheDichotomique(valeur, listeTriee)` qui prend en entrée une liste triée de nombres et une valeur à rechercher dans la liste et renvoie l'indice de la liste correspondant à cette valeur.
-
-
-
 
 

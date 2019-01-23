@@ -12,11 +12,12 @@ Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 
 **Chargé de cours et TD :** [Luca De Feo](https://defeo.lu/)
 
+**Serveur pour les TPs**: <https://jupyter.ens.uvsq.fr/>
 
 
 ## Liste des cours
 
-26 janvier
+24 janvier
 
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
@@ -25,6 +26,7 @@ Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
 
+{% comment %}
 
 2 février
 
@@ -132,27 +134,14 @@ Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 ***2nd contrôle continu***
 
 
-
+{% endcomment %}
 
 
 ## Modalités d'évaluation :
 
-16 mars - 14h : 1er contrôle continu (sur feuille) : 
-[sujet](annales/2018-CC1.pdf) et 
-[corrigé](annales/2018-CC1c.pdf)
-
-20 avril - 14h : 2nd contrôle continu (sur machine) :
-[sujet](annales/2018-CC2.pdf) et 
-[corrigé](annales/2018-CC2.ipynb)
-
-30 avril - 14h : Examen (sur feuille) : 
-[sujet](annales/2018-Exam.pdf) et 
-[corrigé](annales/2018-Cor.pdf)
+Deux contrôles continus
 
 **Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2
-
-
-
 
 
 ## Annales
@@ -172,7 +161,13 @@ Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 
  [Examen](annales/2017-exam.pdf)
  
+2018
 
+ [CC1](annales/2018-CC1.pdf) et 
+ [CC2](annales/2018-CC2.pdf)
+ 
+ [Examen](annales/2018-Exam.pdf)
+ 
 
 
 
