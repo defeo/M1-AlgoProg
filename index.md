@@ -8,9 +8,9 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème étage)
+Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 
-**Chargé de cours et TD :** [Alex Gélin](https://alexgelin.github.io/)
+**Chargé de cours et TD :** [Luca De Feo](https://defeo.lu/)
 
 
 
