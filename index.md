@@ -26,9 +26,7 @@ Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
 
-{% comment %}
-
-2 février
+31 janvier
 
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
@@ -38,6 +36,7 @@ Cours & TD le jeudi de 8h00 à 11h10, salle RC22 (Bât Descartes - RDC)
 **TD :** [Algorithmes de tri](tds/tris)
 
 
+{% comment %}
 
 9 février
 

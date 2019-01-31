@@ -1,5 +1,5 @@
 ---
-title: Implémentation des algorithmes de tri en Python
+title: Implantation des algorithmes de tri en Python
 ---
 
 ## Tri à bulles (bubble sort)
@@ -20,7 +20,7 @@ Voici comment se passe le premier *passage*.
 [1, 2, 4, 3, 5] # Fin du premier passage.
 ~~~
 
-Comme on peut le voir, l'algorithme compare à chaque fois des éléments adjacents et les échange s'ils ne sont pas dans l'ordre. À la fin de ce premier passage, l'élément le plus grand du tableau (ici l'élément 5) se retrouve à la fin du tableau à sa position définitive. Le tableau n'est cependant pas encore complètement trié et nous devons donc continuer par un nouveau passage. Lors de ce nouveau passage on peut ignorer la dernière case du tableau, car celle-ci contient déjà l'élément le plus grand et ne nécessite donc pas d'être traitée à nouveau.  
+Comme on peut le voir, l'algorithme compare à chaque fois des éléments adjacents et les échange s'ils ne sont pas dans l'ordre. À la fin de ce premier passage, l'élément le plus grand du tableau (ici l'élément 5) se retrouve à la fin du tableau à sa position définitive. Le tableau n'est cependant pas encore complètement trié et nous devons donc continuer par un nouveau passage. Lors de ce nouveau passage on peut ignorer la dernière case du tableau, car celle-ci contient déjà l'élément le plus grand et ne nécessite donc pas d'être traitée à nouveau.
 
 ~~~python
 [1, 2, 4, 3, 5] # On compare 1 et 2 et on ne fait rien.
@@ -43,7 +43,7 @@ Tri-Bulles(T)
 
 **:**{:.exercise} 
 
-* Implémentez cette version de l'algorithme en Python et testez-là en lui donnant en entrée une liste aléatoire de nombres entiers. Pour générer une liste `L` de `t` nombres entiers aléatoires compris dans l'interval `[a, b)`on peut écrire :
+* Implantez cette version de l'algorithme en Python et testez-là en lui donnant en entrée une liste aléatoire de nombres entiers. Pour générer une liste `L` de `t` nombres entiers aléatoires compris dans l'interval `[a, b)`on peut écrire :
 
 ~~~python
 L = random.sample(range(a, b), t)
@@ -58,13 +58,23 @@ Par exemple, pour générer une liste de 10 entiers compris entre 0 et 99 il suf
 [41, 21, 38, 20, 69, 14, 10, 50, 76, 9]
 ~~~
 
-* Pourquoi la version de l'algorithme que vous venez d'implémenter n'est pas optimale ? Pour répondre à cette question, on peut remarquer que dans l'exemple précédent le tableau est déjà trié après seulement le deuxième passage. Dans ce cas, a-t-on besoin d'exécuter l'algorithme jusqu'à la fin ?
+* Pourquoi la version de l'algorithme que vous venez d'implanter n'est pas optimale ? Pour répondre à cette question, on peut remarquer que dans l'exemple précédent le tableau est déjà trié après seulement le deuxième passage. Dans ce cas, a-t-on besoin d'exécuter l'algorithme jusqu'à la fin ?
 
-* Réfléchissez à une façon de rendre l'algorithme plus optimisé. Implémentez cette méthode et testez-là.
+* Réfléchissez à une façon de rendre l'algorithme plus efficace. Implantez cette méthode et testez-là.
 
 * Quel est le temps d'exécution de cet algorithme dans le cas le plus défavorable ? Et dans le cas le plus favorable ?
 
-* Calculez en pratique le temps d'exécution de vos deux tris (version naïve et version optimisée). Pour cela, il faut introduire au début de votre script le module `time` en écrivant `import time`. Débutez le compteur en insérant l'instruction `debut = time.time()` et arrêtez-le avec l'instruction `fin = time.time()`. Imprimez le temps en secondes écoulé en écrivant `print("Le temps en secondes écoulé pour faire le tri est", fin-debut)`. Afin de pouvoir observer la différence, générez de tableaux de taille significative (par exemple de taille 50000). 
+* Calculez en pratique le temps d'exécution de vos deux tris (version
+  naïve et version optimisée). Pour cela, vous pouvez utiliser la clef
+  *magique* `%time` de Jupyter: elle est à mettre au début de
+  l'instruction dont vous souhaitez mesurer les performances :
+  
+  ~~~
+  %time trier(L)
+  ~~~
+  
+  Afin de pouvoir observer la différence, générez de tableaux de
+  taille significative (par exemple de taille 50000).
 
 
 ## Tri par sélection (selection sort)
@@ -106,7 +116,7 @@ Le tri fusion se base sur le principe diviser pour régner.
 
 * Appliquez le tri fusion *à la main* pour trier le tableau `[5, 2, 4, 7, 1, 3, 2, 6]`.
 
-* Implémentez en Python le tri fusion vu en cours et testez-le sur un tableau de taille 1000 contenant des nombres aléatoires de 0  à 10000.
+* Implantez en Python le tri fusion vu en cours et testez-le sur un tableau de taille 1000 contenant des nombres aléatoires de 0  à 10000.
 
 * Comparez en pratique son temps d'exécution aux autres algorithmes de tri implementés précédemment.
 
@@ -124,7 +134,7 @@ Le tri par paquets fonctionne bien si les éléments sont uniformément distribu
 
 **:**{:.exercise} 
 
-* Implémentez le tri par paquets en suivant les étapes suivantes :
+* Implantez le tri par paquets en suivant les étapes suivantes :
 
      - Initialisez une liste de listes (urnes) vides.
 
@@ -134,8 +144,8 @@ Le tri par paquets fonctionne bien si les éléments sont uniformément distribu
 
      - Parcourez les urnes dans l'ordre et remettez les éléments dans le tableau initial.
 
-* Testez votre implémentation sur un tableau de grande taille généré aléatoirement. Comparez ses performances aux autres algorithmes de tri.
+* Testez votre implantation sur un tableau de grande taille généré aléatoirement. Comparez ses performances aux autres algorithmes de tri.
 
 ## Autres algorithmes de tri
 
-Implémentez les deux autres algorithmes de tri vus en cours (**tri par insertion** et **tri rapide**).
+Implantez les deux autres algorithmes de tri vus en cours (**tri par insertion** et **tri rapide**).
