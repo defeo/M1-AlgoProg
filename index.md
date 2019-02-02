@@ -25,6 +25,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Tri par insertion
   - Analyse de complexité
 : **TD :** [(Ré)-introduction à Python](tds/intro-python)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/0/TD1){:target="_blank"} de la séance.
 
 
 31 janvier 2019
@@ -34,6 +35,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Principe *"diviser pour régner"*
   - Exemples : *tri fusion*, *tri rapide*
 : **TD :** [Algorithmes de tri](tds/tris)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/2/TD2){:target="_blank"} de la séance.
 
 
 15 février 2019 (9h40, salle G103)
