@@ -10,14 +10,14 @@ Les chaînes de caractères sont vues par Python comme une *collection ordonnée
 
 ~~~python
 >>> chaine = "Algorithmique et Programmation"
->>> print(chaine[0], chaine[2], chaine[10], chaine[-1])
+>>> chaine[0], chaine[2], chaine[10], chaine[-1]
 A g q n
 ~~~
 
 Comme vous pouvez le voir, les indices négatifs peuvent être utilisés afin d'accéder aux caractères de la chaîne par la fin. Nous pouvons déterminer la longueur d'une chaîne, c.-à-d. le nombre de ses caractères,  à l'aide de la fonction `len()`.
 
 ~~~python
->>> print(len(chaine))
+>>> len(chaine)
 30
 ~~~
 
@@ -64,15 +64,15 @@ Voici une fonctionnalité des listes en Python qui peut vous aider dans la réal
 >>> L = ['a', 'b', 'c', 'd']
 >>> L.pop()
 'd'
->>> print(L)
+>>> L
 ['a', 'b', 'c']
 ~~~
 
-La méthode `pop()`appliquée à une liste, dépile et renvoie l'élément au sommet de la pile. La méthode `append(a)`quant à elle, ajoute l'élément `a` au sommet de la pile.
+La méthode `pop()`appliquée à une liste, dépile et renvoie l'élément au sommet de la pile. La méthode `append(a)` quant à elle, ajoute l'élément `a` au sommet de la pile.
 
 ~~~python
 >>> L.append('e')
->>> print(L)
+>>> L
 ['a', 'b', 'c', 'e']
 ~~~
 
@@ -136,14 +136,14 @@ Supposons qu'on souhaite créer un dictionnaire pour traduire les couleurs du fr
 >>> dico['vert'] = 'green'
 >>> dico['rouge'] = 'red'
 >>> dico['noir'] = 'black'
->>> print(dico)
+>>> dico
 {'noir': 'black', 'vert': 'green', 'rouge': 'red'} 
 ~~~
 
 Lorsque on affiche un dictionnaire, ceci apparaît sous la forme *clé-valeur*. Ici les mots français sont les clés, et les mots anglais les valeurs. Pour voir la traduction du mot *rouge* en anglais il suffit d'écrire
 
 ~~~python
->>> print(dico['rouge'])
+>>> dico['rouge']
 red
 ~~~
 
@@ -151,14 +151,14 @@ On peut supprimer un couple clé-valeur du dictionnaire avec la commande `del`
 
 ~~~python
 >>> del dico['noir']
->>> print(dico)
+>>> dico
 {'vert': 'green', 'rouge': 'red'}
 ~~~
 
 On peut connaître le nombre d'entrées dans le dictionnaire à chaque instant en utilisant la fonction `len()`.
 
 ~~~python
->>> print(len(dico))
+>>> len(dico)
 2
 ~~~
 
@@ -177,14 +177,14 @@ La traduction de ce mot est inconnue.
 Nous pouvons appliquer aux dictionnaires quelques méthodes spécifiques. La méthode `keys()` renvoie la séquence des clés utilisées dans le dictionnaire.
 
 ~~~python
->>> print(dico.keys())
+>>> dico.keys()
 dict_keys(['vert', 'rouge'])
 ~~~
 
 De façon analogue, la méthode `values()` permet de voir la séquence des *valeurs* qui se trouvent dans le dictionnaire.
 
 ~~~python
->>> print(dico.values())
+>>> dico.values()
 dict_values(['green', 'red'])
 ~~~
 
