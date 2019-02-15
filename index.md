@@ -35,7 +35,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Principe *"diviser pour régner"*
   - Exemples : *tri fusion*, *tri rapide*
 : **TD :** [Algorithmes de tri](tds/tris)
-: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/2/TD2){:target="_blank"} de la séance.
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/3/TD2){:target="_blank"} de la séance.
 
 
 15 février 2019 (9h40, salle G103)
@@ -46,6 +46,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Arbres
   - Tables de hachage
 : **TD :** [Structures de données](tds/structures-donnees)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/2/TD3){:target="_blank"} de la séance.
 
 
 21 février 2019
