@@ -125,9 +125,9 @@ Vous devez maintenant parcourir le fichier et créer un nouvel objet ville à pa
 
 ~~~python
 with open("villes.txt", "r") as fichier:
-	for ligne in fichier:
-		liste = ligne.rsplit(" ")
-		ville = Ville(liste)
+    for ligne in fichier:
+        liste = ligne.rsplit(" ")
+        ville = Ville(liste)
 ~~~
 
 La première ligne indique que nous allons ouvrir le fichier `villes.txt` en mode *lecture* (d'où, le `"r"`, faisant référence à *read*). Nous pouvons ensuite parcourir le fichier ligne par ligne. La variable `ligne` contient à chaque itération la ligne que nous sommes en train de lire, vue comme une chaîne de caractères. 
@@ -164,9 +164,9 @@ Testez votre code :
 liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
 noeud = Noeud(liste)
 with open("villes.txt", "r") as fichier:
-	for ligne in fichier:
-		liste = ligne.rsplit(" ")
-		noeud.inserer(liste)
+    for ligne in fichier:
+        liste = ligne.rsplit(" ")
+        noeud.inserer(liste)
 
 noeud.afficherArbre()
 ~~~
