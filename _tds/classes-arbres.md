@@ -9,15 +9,15 @@ Python est un langage orienté-objet. Dans ce type de langage, absolument tout e
 La création d'un objet se fait en deux étapes. On décrit d'abord à quoi ressemble notre objet et on demande ensuite à l’ordinateur d’utiliser cette description pour le fabriquer. Créons une classe `Etudiant`.
 
 ~~~python
->>> class Etudiant :
-...     def __init__(self, nom, prenom, numero_etudiant, age) :
-...         self.nom = nom
-...         self.prenom = prenom
-...         self.numero_etudiant = numero_etudiant
-...         self.age = age
+class Etudiant:
+    def __init__(self, nom, prenom, numero_etudiant, age):
+        self.nom = nom
+        self.prenom = prenom
+        self.numero_etudiant = numero_etudiant
+        self.age = age
 ~~~
 
-La classe `Etudiant` modélise d'une certaine façon l'entité *étudiant* et décrit ses caractéristiques principales à travers ses *champs*.
+La classe `Etudiant` modélise l'entité *étudiant* et décrit ses caractéristiques principales à travers ses *champs*.
 
 * Le mot `class` est un mot-clé utilisé lorsqu'on définit une nouvelle classe.
 * `Etudiant` est le nom de la classe. Par convention, le nom de la classe commence par une lettre majuscule et ne comporte pas d'espaces. On écrit par exemple : `NomDeLaClasse`.
@@ -28,7 +28,7 @@ La classe `Etudiant` modélise d'une certaine façon l'entité *étudiant* et d�
 Créons maintenant un objet `Etudiant`.
 
 ~~~python
->>> unEtudiant = Etudiant("Dupont", "Marcel", 2110012, 23)
+unEtudiant = Etudiant("Dupont", "Marcel", 2110012, 23)
 ~~~
 
 Nous allons maintenant voir comment définir les *méthodes d'instance* d'une classe. Ce sont des méthodes (fonctions) qui s'appliquent directement aux objets, instances de la classe. Vous avez déjà utilisé des méthodes d'instance plusieurs fois sans vous en rendre probablement compte. Par exemple, lorsque vous écrivez
@@ -36,7 +36,7 @@ Nous allons maintenant voir comment définir les *méthodes d'instance* d'une cl
 ~~~python
 >>> liste = list([1, 2, 3])
 >>> liste.append(4)
->>> print(liste)
+>>> liste
 [1, 2, 3, 4]
 ~~~
 
@@ -45,40 +45,40 @@ vous appelez la *méthode* `append()` de la classe `list` sur l'objet `liste` qu
 Voici alors quelques méthodes que nous pouvons définir dans notre classe `Etudiant`.
 
 ~~~python
->>> class Etudiant :
-...     def __init__(self, nom, prenom, numero_etudiant, age) :
-...         self.nom = nom
-...         self.prenom = prenom
-...         self.numero_etudiant = numero_etudiant
-...         self.age = age
-...
-...     def getNom(self) :
-...         return self.nom
-...
-...     def getPrenom(self) :
-...         return self.prenom
-...
-...     def estPlusAgeQue(self, age) :
-...         if self.age > age :
-...             return True
-...         else :
-...             return False     
+class Etudiant:
+    def __init__(self, nom, prenom, numero_etudiant, age):
+        self.nom = nom
+        self.prenom = prenom
+        self.numero_etudiant = numero_etudiant
+        self.age = age
+
+    def getNom(self):
+        return self.nom
+
+    def getPrenom(self):
+        return self.prenom
+
+    def estPlusAgeQue(self, age):
+        if self.age > age:
+            return True
+        else:
+            return False
 ~~~
 
 * Toutes les méthodes d'instance prennent `self` comme premier argument. L'utilisation d'une méthode d'instance est très simple. Il suffit d'écrire le nom de l'objet, suivi par un '`.`' et suivi ensuite par le nom de la méthode.
 
 ~~~python
->>> print(unEtudiant.getNom())
+>>> unEtudiant.getNom()
 Dupont
->>> print(unEtudiant.getPrenom())
+>>> unEtudiant.getPrenom()
 Marcel
->>> print(unEtudiant.estPlusAgeQue(30)
+>>> unEtudiant.estPlusAgeQue(30)
 False
 ~~~
 
 ## Une classe Ville
 
-Téléchargez et sauvegardez le fichier [villes.txt](villes.txt). Ce fichier contient la liste des 200 plus grandes villes de France dans un ordre aléatoire. Chaque ligne de ce fichier contient les 5 informations suivantes :
+Téléchargez dans votre serveur Jupyter le fichier [villes.txt](villes.txt). Ce fichier contient la liste des 200 plus grandes villes de France dans un ordre aléatoire. Chaque ligne de ce fichier contient les 5 informations suivantes :
 
 * Nom de la ville
 * Numéro du département
@@ -103,9 +103,9 @@ Ajoutez ensuite les 3 méthodes suivantes à votre classe :
 
 * Une méthode `getSuperficie(self)` qui renvoie la valeur du champ *superficie*,
 
-* Une méthode `afficherNom(self)` qui affiche la valeur du champ *nom*,
+* Une méthode `afficherNom(self)` qui affiche la valeur du champ *nom*, en utilisant la commande `print`,
 
-* Une méthode `afficherVille(self)` qui affiche les valeurs des quatre premiers champs.
+* Une méthode `afficherVille(self)` qui affiche les valeurs des quatre premiers champs, en utilisant la commande `print`.
 
 Testez votre classe en tapant :
 
@@ -113,9 +113,9 @@ Testez votre classe en tapant :
 
 >>> liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
 >>> ville = Ville(liste)
->>> print(ville.getRang())
+>>> ville.getRang()
 100
->>> print(ville.getSuperficie())
+>>> ville.getSuperficie()
 5.4
 >>> ville.afficherVille()
 Maisons-Alfort 94 51091 5.4
@@ -124,10 +124,10 @@ Maisons-Alfort 94 51091 5.4
 Vous devez maintenant parcourir le fichier et créer un nouvel objet ville à partir des informations contenues dans chaque ligne du fichier. Pour cela, il vous suffit de copier-coller le code ci-dessous :
 
 ~~~python
->>> fichier = open("villes.txt", "r")
->>> for ligne in fichier :
-...     liste = ligne.rsplit(" ")
-...     ville = Ville(liste)
+with open("villes.txt", "r") as fichier:
+	for ligne in fichier:
+		liste = ligne.rsplit(" ")
+		ville = Ville(liste)
 ~~~
 
 La première ligne indique que nous allons ouvrir le fichier `villes.txt` en mode *lecture* (d'où, le `"r"`, faisant référence à *read*). Nous pouvons ensuite parcourir le fichier ligne par ligne. La variable `ligne` contient à chaque itération la ligne que nous sommes en train de lire, vue comme une chaîne de caractères. 
@@ -141,11 +141,11 @@ Notre but maintenant est d'insérer toutes ces villes dans un arbre binaire de r
 Commencez par créer une classe `Noeud` ayant le constructeur suivant :
 
 ~~~python
->>> class Noeud:
-...    def __init__(self,liste):
-...        self.gauche = None
-...        self.droite = None
-...        self.ville = Ville(liste)
+class Noeud:
+   def __init__(self,liste):
+       self.gauche = None
+       self.droite = None
+       self.ville = Ville(liste)
 ~~~
 
 Cette classe a donc trois attributs (comme attendu pour un ABR) : un fils gauche, un fils droite, et une *valeur* pouvant être comparée (ou ayant des champs pouvant être comparés), qui est ici un objet de type `Ville`.
@@ -161,14 +161,13 @@ Dotez votre classe `Noeud` d'une méthode `inserer(self, liste)` qui prendra com
 Testez votre code :
 
 ~~~python
->>> fichier = open("villes.txt", "r")
->>> liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
->>> noeud = Noeud(liste)
->>> for ligne in fichier :
-...     liste = ligne.rsplit(" ")
-...     noeud.inserer(liste)
+liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
+noeud = Noeud(liste)
+with open("villes.txt", "r") as fichier:
+	for ligne in fichier:
+		liste = ligne.rsplit(" ")
+		noeud.inserer(liste)
 
-fichier.close()
 noeud.afficherArbre()
 ~~~
 
@@ -212,11 +211,14 @@ Nous avons maintenant besoin d'une méthode qui permet de rechercher une ville d
 Testez votre code :
 
 ~~~python
->>> unNoeud = noeud.rechercher(130)
->>> if unNoeud is not None :
-...    unNoeud.ville.afficherNom()
-... else :
-...    print("Non trouvé")
+unNoeud = noeud.rechercher(130)
+if unNoeud is not None:
+   unNoeud.ville.afficherNom()
+else:
+   print("Non trouvé")
+~~~
+
+~~~
 Saint-Brieuc
 ~~~
 
@@ -228,16 +230,13 @@ Testez votre code :
 
 ~~~python
 >>> unNoeud = noeud.rechercher(130)
->>> nombreEnfants = unNoeud.compterEnfants()
->>> print("Nombre d'enfants = ", nombreEnfants)
+>>> unNoeud.compterEnfants()
 1
 >>> unNoeud = noeud.rechercher(100)
->>> nombreEnfants = unNoeud.compterEnfants()
->>> print("Nombre d'enfants = ", nombreEnfants)
+>>> unNoeud.compterEnfants()
 2
 >>> unNoeud = noeud.rechercher(200)
->>> nombreEnfants = unNoeud.compterEnfants()
->>> print("Nombre d'enfants = ", nombreEnfants)
+>>> unNoeud.compterEnfants()
 0
 ~~~
 
