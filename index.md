@@ -54,6 +54,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 
   - Arbres binaires de recherche
 : **TD :** [Arbres](tds/classes-arbres)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/1/TD4){:target="_blank"} de la séance.
 
 
 28 fevrier 2019
