@@ -100,7 +100,6 @@ Deux contrôles continus
 : [Examen](annales/2017-exam.pdf)
  
 2018
-
 : [CC1](annales/2018-CC1.pdf) et [CC2](annales/2018-CC2.pdf)
 : [Examen](annales/2018-Exam.pdf)
 
@@ -118,6 +117,17 @@ A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy, É. Schost.
 686 pages. Imprimé par CreateSpace. Aussi disponible en version électronique.
 Palaiseau: Frédéric Chyzak (auto-édit.), sept. 2017.
 ISBN : 979-10-699-0947-2. <https://hal.archives-ouvertes.fr/AECF/>
+
+B. Cordeau, L. Pointal.
+*Python 3 – Apprendre à programmer en Python avec PyZo et Jupyter Notebook*.
+Dunod 2017.
+ISBN : 978-2-10-076636-9. Côte BU : 005.13pyt.
+[Site web](https://www.dunod.com/sciences-techniques/python-3-apprendre-programmer-en-python-avec-pyzo-et-jupyter-notebook).
+
+B. Cordeau, L. Pointal.
+*Une introduction à Python 3*.
+Polycopié, licence libre CC3.0. 2015.
+<https://perso.limsi.fr/pointal/python:courspython3>.
 
 G. Swinnen.
 *Apprendre à programmer avec Python 3*.
