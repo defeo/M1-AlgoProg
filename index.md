@@ -78,7 +78,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 18 avril 2019
 : Programmation linéaire ?
 
-25 avril 2019
+22 avril 2019 (9h40, salle D122)
 : Problèmes NP-complets ?
 
 
