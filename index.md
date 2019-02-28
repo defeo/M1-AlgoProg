@@ -25,7 +25,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Tri par insertion
   - Analyse de complexité
 : **TD :** [(Ré)-introduction à Python](tds/intro-python)
-: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/0/TD1){:target="_blank"} de la séance.
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD1){:target="_blank"} de la séance.
 
 
 31 janvier 2019
@@ -35,7 +35,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Principe *"diviser pour régner"*
   - Exemples : *tri fusion*, *tri rapide*
 : **TD :** [Algorithmes de tri](tds/tris)
-: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/3/TD2){:target="_blank"} de la séance.
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD2){:target="_blank"} de la séance.
 
 
 15 février 2019 (9h40, salle G103)
@@ -46,7 +46,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Arbres
   - Tables de hachage
 : **TD :** [Structures de données](tds/structures-donnees)
-: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/2/TD3){:target="_blank"} de la séance.
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD3){:target="_blank"} de la séance.
 
 
 21 février 2019
@@ -54,11 +54,11 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 
   - Arbres binaires de recherche
 : **TD :** [Arbres](tds/classes-arbres)
-: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/1/TD4){:target="_blank"} de la séance.
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD4){:target="_blank"} de la séance.
 
 
 28 fevrier 2019
-: Contrôle continu
+: [Contrôle continu](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1){:target="_blank"}
 
 14 mars 2019
 : Arbres (suite) ?
