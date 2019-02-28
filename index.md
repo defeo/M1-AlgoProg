@@ -58,7 +58,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 
 
 28 fevrier 2019
-: [Contrôle continu](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1){:target="_blank"}
+: [Contrôle continu](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1){:target="_blank"} ([solution](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1-solution))
 
 14 mars 2019
 : Arbres (suite) ?
