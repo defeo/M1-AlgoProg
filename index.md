@@ -61,25 +61,31 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 : [Contrôle continu](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1){:target="_blank"} ([solution](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1-solution))
 
 14 mars 2019
-: Arbres (suite) ?
+: Programmation dynamique
+  
+  - Puissance d'une matrice, square and multiply,
+  - Nombres de Catalan,
+  - Programmation dynamique.
+  
+: **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 22 mars 2019 (9h40, salle G103)
-: Programmation dynamique
+: Graphes ?
 
 28 mars 2019
-: Graphes
+: Graphes (suite) ?
 
 4 avril 2019
-: Graphes (suite)
-
-11 avril 2019
 : Algèbre linéaire ?
 
-18 avril 2019
+11 avril 2019
 : Programmation linéaire ?
 
-22 avril 2019 (9h40, salle D122)
+18 avril 2019
 : Problèmes NP-complets ?
+
+22 avril 2019 (9h40, salle D122)
+: ??
 
 
 ## Modalités d'évaluation :
