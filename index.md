@@ -68,6 +68,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Programmation dynamique.
   
 : **TD :** [Programmation dynamique](tds/prog-dynamique)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD5){:target="_blank"} de la séance.
 
 22 mars 2019 (9h40, salle G103)
 : Graphes ?
