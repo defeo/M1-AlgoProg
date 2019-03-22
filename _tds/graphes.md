@@ -32,8 +32,8 @@ Créez une classe `Matrice`, avec un unique constructeur, qui :
 ~~~python
 class Matrice:
     def __init__(self, coefficients):
-	if len(coefficients) == 0:
-	    raise RuntimeError("Matrice vide")
+        if len(coefficients) == 0:
+            raise RuntimeError("Matrice vide")
 ~~~
 
 L'affichage par défaut des objets est peu lisible. Python offre une longue liste de méthodes dites *spéciales*, reconnaissables aux doubles tirets bas `__nom_de_la_methode__`, qui permettent de changer le comportement des objets. La méthode spéciale `__repr__(self)` doit renvoyer une chaîne de caractères (**renvoyer**, pas faire un `print` !), qui est utilisée par Python pour afficher l'objet, que ce soit dans le notebook ou dans un terminal.
