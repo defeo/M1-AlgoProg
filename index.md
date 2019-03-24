@@ -77,6 +77,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Parcours, tri topologique.
 
 : **TD :** [Graphes](tds/graphes)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD6){:target="_blank"} de la séance.
 
 28 mars 2019
 : Graphes (suite) ?
