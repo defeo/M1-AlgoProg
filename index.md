@@ -80,7 +80,12 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 : Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD6){:target="_blank"} de la séance.
 
 28 mars 2019
-: Graphes (suite) ?
+: Graphes (suite)
+  
+  - Arbres couvrants, algorithmes de Prim et Kruskal
+  - Plus courts chemins, Algorithme de Dijkstra
+
+: **TD :** [Graphes](tds/graphes)
 
 4 avril 2019
 : Algèbre linéaire ?
