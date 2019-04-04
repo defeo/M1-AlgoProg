@@ -45,7 +45,8 @@ Implanter l'algorithme de *string matching* naïf: coder une fonction
 occurrence de `pattern` dans `string`.
 
 Tester votre algorithme sur le génome de l'*Escherichia coli* (souche
-K-12, MG1655), que vous pouvez télécharger avec les commandes suivantes:
+K-12, MG1655), que vous pouvez télécharger dans la variable `genome`
+avec les commandes suivantes:
 
 ```python
 from requests import get
@@ -59,6 +60,16 @@ genome = decompress(req.content).decode()[71:]
 <script>
 $("#ecoli .s").textContent = `'${String(location).replace('strings', 'ecoli.gz')}'`;
 </script>
+
+Alternativement, si vous avez du mal à télécharger depuis le notebook
+jupyter, [téléchargez le fichier ici](ecoli.gz), mettez-le dans le
+même dossier que votre notebook, et chargez-le avec
+
+```python
+from gzip import open
+
+genome = open('ecoli.gz').read().decode()[71:]
+```
 
 Trouvez la première occurrence de la séquence `GATTACA`.
 

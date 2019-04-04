@@ -95,6 +95,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
   - Automates finis
 
 : **TD :** [String matching](tds/strings)
+: Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD7){:target="_blank"} de la séance.
 
 11 avril 2019
 : Programmation linéaire ?
