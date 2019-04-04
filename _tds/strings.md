@@ -52,7 +52,7 @@ from requests import get
 from gzip import decompress
 
 req = get('ecoli.gz')
-genome = ''.join(decompress(req.content).decode().split('\n')[1:])
+genome = decompress(req.content).decode()[71:]
 ```
 {:#ecoli}
 
