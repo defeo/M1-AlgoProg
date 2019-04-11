@@ -98,7 +98,11 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 : Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD7){:target="_blank"} de la séance.
 
 11 avril 2019
-: Programmation linéaire ?
+: Programmation linéaire
+  
+  - Algorithme du simplexe
+  
+: **TD :** [Programmation linéaire](tds/linprog)
 
 18 avril 2019
 : Problèmes NP-complets ?
