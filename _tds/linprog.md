@@ -98,7 +98,7 @@ $$\begin{array}{c c c c c c | c}
 \hline
   & 1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
   &   &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
-  &   &  \frac{1}{4} & \frac{5}{4} &   & 1 & 12
+  &   &  \frac{3}{4} & \frac{5}{4} &   & 1 & 12
 \end{array},$$
 
 où $$x,s,t$$ sont devenues basiques, et où le point faisable
