@@ -2,19 +2,22 @@
 title: Bin packing
 ---
 
-Dans ce TD nous allons étudier le problème de remplissage de boîtes
+Dans ce devoir nous allons étudier le problème de remplissage de boîtes
 (*bin packing*).  Une instance du problème est donnée par une liste de
 $$n$$ objets de taille $$s_i$$, avec $$0 < s_i <1$$.  On souhaite
 ranger ces objets dans un minimum de boîtes de taille 1.  Par exemple,
 des objets de tailles $$0.1, 0.2, 0.4, 0.8, 0.4$$ peuvent être rangés
 dans deux boîtes.
 
+Ce devoir est à réaliser dans un notebook Jupyter. Servez-vous des
+cellules "Markdown" et de la syntaxe LaTeX pour rédiger les preuves.
+
 ## Un algorithme glouton
 
 On va commencer avec un algorithme glouton, qui prend les objets un par
 un et les range dans la première boîte qui peut l'accueillir.
 
-**:**{:.exercise} Implémenter l'algorithme glouton.
+**:**{:.exercise} Implémenter l'algorithme glouton en Python.
 
 **:**{:.exercise} Montrer que l'algorithme glouton ne trouve pas
   toujours la solution optimale.
@@ -24,7 +27,7 @@ une bonne approximation de la solution optimale.
 
 On note $$ S = \sum_{i=1}^n s_i $$
 
-**:**{:.exercise} Monter que le nombre optimal de boîtes nécessaires est
+**:**{:.exercise} Monter que le nombre minimal de boîtes nécessaires est
   au moins égal à $$\lceil S \rceil$$
 
 **:**{:.exercise} Monter que l'algorithme glouton laisse au plus une
@@ -36,9 +39,9 @@ On note $$ S = \sum_{i=1}^n s_i $$
 **:**{:.exercise} En conclure que l'algorithme glouton utilise au pire
   deux fois plus de boîtes qu'une solution optimale.
 
-## Un algorithme optimal
+## Un algorithme exact
 
-**:**{:.exercise} Implémenter un algorithme optimal, qui teste toutes
+**:**{:.exercise} Implémenter un algorithme exact, qui teste toutes
   les positions pour chaque objet.
 
 **:**{:.exercise} Comparer les performances des deux algorithmes.
@@ -65,12 +68,8 @@ $$t≥0$$, déterminer s'il existe un sous-ensemble $$X'⊂X$$ tel que
 
 $$t = \sum_{x∈S'} x.$$
 
-**:**{:.exercise} Montrer que *sac à dos*$$\le_P$$*bin packing*.
+**:**{:.exercise} Montrer que *sac à dos* $$\le_P$$ *bin packing*.
 
 Indice: à partir d'une instance $$X = \{x_1, x_2, \dots, x_n\}$$ du *sac à dos*,
 construire une instance de *bin packing* telle que le nombre minimal de
-boîte soit 2 si l'instance $$X$$ a une solution, et 3 sinon.
-
-**:**{:.exercise} En déduire que le problème de *bin packing* est
-  NP-complet.  Pensez-vous pouvoir trouver un algorithme polynomial pour
-  résoudre le *bin packing*?
+boîtes soit 2 si l'instance $$X$$ a une solution, et 3 sinon.

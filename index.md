@@ -106,12 +106,22 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 : Le [Jupyter notebook](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/TD8){:target="_blank"} de la séance.
 
 18 avril 2019
-: Problèmes NP-complets ?
+: Problèmes NP-complets
+  
+  - Classes de complexité P, NP
+  - Arguments réductionnistes
+  - Problèmes NP-complets
+
+: **TD :** [Sac à dos](tds/knapsack)
 
 
 ## Modalités d'évaluation :
 
-Deux contrôles continus
+Deux contrôles continus:
+
+- [CC1](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1){:target="_blank"} ([solution](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1-solution)),
+- [CC2](tds/binpacking).
+
 
 **Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2
 

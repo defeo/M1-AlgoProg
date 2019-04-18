@@ -58,7 +58,7 @@ calcul de
 $$P'(i,t) = \left\{x_{i+1} + \sum_{x∈S'}x ≤ t \;\middle\vert\; S'⊂\{x_1,\dots,x_i\}\right\}.$$
 
 L'ensemble $$P(i+1,t)$$ sera alors obtenu en fusionnant $$P(i,t)$$ et
-$$P'(i,t)$$. La fusion est facilitée on fait attention à garder les
+$$P'(i,t)$$. La fusion est plus simple si on fait attention à garder les
 deux listes ordonnées (comparer avec le [tri fusion](tris)).
 
 **(mémoisation) :**{:.exercise} Écrire une variante
@@ -68,6 +68,5 @@ calculant les listes $$P(i,t)$$ par un appel récursif.
 **:**{:.exercise} Écrire une variante `partial_subset_sum_dyn` sans
 appels récursifs.
 
-**:**{:.exercise} Utiliser les techniques de mesure des performances
-vues au [TD sur l'algèbre linéaire](linalg) pour comparer les
-performances de vos algorithmes.
+**:**{:.exercise} Utiliser les *clefs magiques* `%time` et `%timeit`
+pour comparer les performances de vos algorithmes.
