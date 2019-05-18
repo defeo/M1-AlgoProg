@@ -117,14 +117,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 
 ## Modalités d'évaluation :
 
-Deux contrôles continus:
-
-- [CC1](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1){:target="_blank"} ([solution](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1-solution)),
-- [CC2](tds/binpacking).
-
-
 **Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2
-
 
 ## Annales
 
@@ -140,7 +133,9 @@ Deux contrôles continus:
 : [CC1](annales/2018-CC1.pdf) et [CC2](annales/2018-CC2.pdf)
 : [Examen](annales/2018-Exam.pdf)
 
-
+2019
+: [CC1](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1) et [CC2](tds/binpacking)
+: [Examen](annales/2019-exam)
 
 ## Bibliographie
 
