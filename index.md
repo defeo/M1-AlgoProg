@@ -135,7 +135,7 @@ En cas de panne: <https://sage.prism.uvsq.fr/> (**attention :**
 
 2019
 : [CC1](https://defeo.lu/M1-AlgoProg-notebooks/#/nb/notebook/CC1) et [CC2](tds/binpacking)
-: [Examen](annales/2019-exam)
+: [Examen](annales/2019-exam) et [Rattrapage](annales/2019-exam-2)
 
 ## Bibliographie
 
